@@ -1,7 +1,7 @@
 /* 전체 배경 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e8f5e9; /* 연한 녹색 */
+    font-family: 'Courier New', Courier, monospace; /* 소스코드 폰트 */
+    background-color: #000000; /* 블랙 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,17 +11,17 @@ body {
 
 /* 컨테이너 */
 .container {
-    background-color: #ffffff;
+    background-color: #1e1e1e; /* 다크 그레이 */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     width: 320px;
     text-align: center;
 }
 
 /* 제목 */
 h1 {
-    color: #388e3c; /* 진한 녹색 */
+    color: #76ff03; /* 밝은 녹색 */
 }
 
 /* 입력 필드 & 버튼 */
@@ -34,13 +34,15 @@ h1 {
 input {
     flex: 1;
     padding: 8px;
-    border: 2px solid #81c784;
+    border: 2px solid #76ff03;
     border-radius: 5px;
+    background-color: #333;
+    color: white;
 }
 
 button {
-    background-color: #66bb6a; /* 버튼 녹색 */
-    color: white;
+    background-color: #76ff03; /* 밝은 녹색 */
+    color: black;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -48,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #4caf50;
+    background-color: #64dd17;
 }
 
 /* 할 일 목록 스타일 */
@@ -62,15 +64,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #c8e6c9;
+    background-color: #2e7d32;
     padding: 8px;
     margin-bottom: 5px;
     border-radius: 5px;
+    color: white;
 }
 
 .todo-item.completed span {
     text-decoration: line-through;
-    color: #666;
+    color: #aaa;
 }
 
 /* 삭제 버튼 */
@@ -79,8 +82,8 @@ ul {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #d32f2f;
+    color: #ff5252;
 }
 .delete-btn:hover {
-    color: #b71c1c;
+    color: #d50000;
 }
